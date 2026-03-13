@@ -1,4 +1,4 @@
-import { BebasNeue_400Regular, useFonts } from '@expo-google-fonts/bebas-neue';
+import { PermanentMarker_400Regular, useFonts } from '@expo-google-fonts/permanent-marker';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -28,7 +28,7 @@ function generateColorPair(): { text: string; background: string } {
 }
 
 export default function App() {
-  const [fontsLoaded] = useFonts({ BebasNeue_400Regular });
+  const [fontsLoaded] = useFonts({ PermanentMarker_400Regular });
   const [colors, setColors] = useState(generateColorPair());
 
   useEffect(() => {
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    fontFamily: 'BebasNeue_400Regular',
+    fontFamily: 'PermanentMarker_400Regular',
     fontSize: 72,
-    letterSpacing: 6,
+    letterSpacing: 2,
   },
 });
